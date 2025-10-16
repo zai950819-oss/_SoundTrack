@@ -1,7 +1,7 @@
 using UnityEngine;
 public class Player : MonoBehaviour
 {
-    public CharacterController controller;
+    [SerializeField] private Character_Controller controller;
     private float horizontal;
     private float vertical;
     public float speed = 8f;
