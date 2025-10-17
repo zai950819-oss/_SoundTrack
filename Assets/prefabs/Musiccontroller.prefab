@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 757212257961896220}
   - component: {fileID: 2244931361093039143}
-  - component: {fileID: 6397375007224968096}
+  - component: {fileID: 4690559701255263843}
   m_Layer: 0
   m_Name: Musiccontroller
   m_TagString: Music
@@ -44,7 +44,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: e308bdc08b72948bca6cc0b58a5ac1f1, type: 3}
+  m_Resource: {fileID: 8300000, guid: 651d9c17db0244b1088321a08982427a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -130,7 +130,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6397375007224968096
+--- !u!114 &4690559701255263843
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,25 +139,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 4429475628490666030}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0f2b4918b42342f98b3466f8c683e81, type: 3}
+  m_Script: {fileID: 11500000, guid: 7802f9a3783294f2a9a88ce9e3e82adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bpm: 90
-  _audioSource: {fileID: 2244931361093039143}
-  _intervals:
-  - _steps: 1
-    _trigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Character_Controller, Assembly-CSharp
-          m_MethodName: rotate
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  clock:
+    bpm: 0
+    beatDur: 0
+    dspStart: 0
+    offsetMs: 0
+    tolMs: 0
+  toleranceMs: 70
+  matcher:
+    tricks: []
+    controller: {fileID: 0}
+  lane0Key: 119
+  lane1Key: 115
+  lane2Key: 97
+  lane3Key: 100
+  music: {fileID: 0}
+  startLeadIn: 0.25
+  bpm: 122
