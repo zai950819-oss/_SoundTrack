@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     public float speed = 8f;
     private static Player instance;
 
+    public Animator animator;
+
 
     void Start()
     {
@@ -20,7 +22,10 @@ public class Player : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+    private void Update()
+    {
+        freezecharacter();
+    }
     private void FixedUpdate()
     {
         horizontal = Input.GetAxisRaw("Horizontal");

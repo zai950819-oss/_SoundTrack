@@ -10,7 +10,7 @@ public class Character_Controller : MonoBehaviour
 {
 
     [SerializeField] private Rigidbody2D rb;
-    public UnityEngine.Vector3 rotationSpeed = new UnityEngine.Vector3(0, 0, 90); // Rotate 50 degrees per second around Y-axis
+
 
 
     // Update is called once per frame
@@ -20,8 +20,6 @@ public class Character_Controller : MonoBehaviour
         rb.linearVelocity = new UnityEngine.Vector2(horizontal * speed, vertical * speed);
     }
 
-    public void rotate()
-    {
-        transform.Rotate(rotationSpeed);
-    }
+    
+    
 }
